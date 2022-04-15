@@ -1,0 +1,45 @@
+<!--
+ * @Description: 
+ * @version: 
+ * @Author: simpletoyou
+ * @Date: 2022-01-19 10:29:59
+ * @LastEditors: simpletoyou
+ * @LastEditTime: 2022-01-19 10:40:43
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>跨域解决方案</title>
+</head>
+
+<body>
+  <div>
+    <button id="btn">按钮</button>
+    <div id="div"></div>
+  </div>
+  <script>
+    var div = document.
+      getElementById("div");
+    var oScript = null;
+    var btn = document.getElementById("btn").onclick = function () {
+      //伪造一个script加载过程
+      oScript = document.createElement("script");
+      
+      oScript.src = "https://v1.hitokoto.cn/&callback=setPrice";
+      console.log('oScript',oScript)
+      document.body.appendChild(oScript);
+      console.log('document',document)
+    };
+    function setPrice(str) {
+      console.log('str',str)
+      div.innerHTML = str;
+      // console.log(str[0].m);
+      // document.body.removeChild(oScript);
+    }</script>
+</body>
+
+</html>

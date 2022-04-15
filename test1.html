@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>this is learning</title>
+	</head>
+	<body>
+		learning
+
+
+		<div class="cat">
+			<ul>
+				<li class="cat-1"><i></i>
+					<h3 class="yu1">Store</h3>
+				</li>
+				<li class="cat-2"><i></i>
+					<h3 class="yu2">Music</h3>
+				</li>
+				<li class="cat-3"><i></i>
+					<h3 class="yu3">Books</h3>
+				</li>
+				<li class="cat-4"><i></i>
+					<h3 class="yu4">Magazines</h3>
+				</li>
+				<li class="cat-5"><i></i>
+					<h3 class="yu5">Devices</h3>
+				</li>
+				<li class="cat-6"><i></i>
+					<h3 class="yu6">Devices</h3>
+				</li>
+			</ul>
+		</div>
+
+		<div class="center">
+			<!-- 	<button class="btn btn-reverse btn-arrow">
+				<span>Hover me
+					<svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg"
+						xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
+						enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+						<g>
+							<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9"
+								x2="34" y2="12.9"></line>
+							<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+								points="22.2,1.1 34,12.9 22.2,24.7   "></polyline>
+						</g>
+					</svg>
+				</span>
+			</button> -->
+
+
+			<!-- <button class="btn btn-arrow btn-border">
+				<span>Hover me<svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg"
+						xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36.1 25.8"
+						enable-background="new 0 0 36.1 25.8" xml:space="preserve">
+						<g>
+							<line fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" x1="0" y1="12.9"
+								x2="34" y2="12.9"></line>
+							<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10"
+								points="22.2,1.1 34,12.9 22.2,24.7   "></polyline>
+						</g>
+					</svg></span>
+			</button> -->
+		</div>
+	</body>
+	<script>
+		// let arr1 = [22, 55, 66, 5343]
+		// //遍历所有数据判断
+		// let isall = arr1.every(function(item, index) {
+		// 	return item > 0
+		// })
+		// console.log('isall', isall)
+		// // 只需要一个数据满足判断条件
+		// let issome = arr1.some(function(item, index) {
+		// 	return item > 9999
+		// })
+		// console.log('issome', issome)
+		// let issome1 = arr1.some((item, index) => {
+		// 	return item > 88
+		// })
+		// console.log('issome1', issome1)
+		// // 遍历数据
+		// arr1.forEach((item, index) => {
+		// 	console.log('index=' + index, 'item=' + item)
+		// })
+
+		// var oldArr = [{
+		// 	first_name: "Colin",
+		// 	last_name: "Toh"
+		// }, {
+		// 	first_name: "Addy",
+		// 	last_name: "Osmani"
+		// }, {
+		// 	first_name: "Yehuda",
+		// 	last_name: "Katz"
+		// }];
+
+		// function getNewArr1() {
+		// 	var newArr = [];
+		// 	for (var i = 0, l = oldArr.length; i < l; i++) {
+		// 		var item = oldArr[i];
+		// 		item.full_name = [item.first_name, item.last_name].join(" ");
+		// 		newArr[i] = item;
+		// 	}
+		// 	return newArr;
+		// }
+		// console.log('普通遍历', getNewArr1());
+
+
+		// var newArr = [{
+		// 	first_name: "Colin",
+		// 	last_name: "Toh"
+		// }, {
+		// 	first_name: "Addy",
+		// 	last_name: "Osmani"
+		// }, {
+		// 	first_name: "Yehuda",
+		// 	last_name: "Katz"
+		// }];
+
+		// function getNewArr2() {
+		// 	return newArr.map(function(item, index) {
+		// 		item.full_name = [item.first_name, item.last_name].join(" ");
+		// 		return item;
+		// 	});
+
+		// }
+		// console.log('map遍历', getNewArr2());
+
+
+		// // forEach和map都支持2个参数：一个是回调函数（item,index,list）和上下文；
+
+		// // forEach：用来遍历数组中的每一项；这个方法执行是没有返回值的，对原来数组也没有影响；数组中有几项，那么传递进去的匿名回调函数就需要执行几次；每一次执行匿名函数的时候，还给其传递了三个参数值：数组中的当前项item,当前项的索引index,原始数组list；理论上这个方法是没有返回值的，仅仅是遍历数组中的每一项，不对原来数组进行修改；但是我们可以自己通过数组的索引来修改原来的数组；
+
+		// // map： 和forEach非常相似，都是用来遍历数组中的每一项值的，用来遍历数组中的每一项；
+
+		// // 区别：map的回调函数中支持return返回值；return的是啥，相当于把数组中的这一项变为啥（并不影响原来的数组，只是相当于把原数组克隆一份，把克隆的这一份的数组中的对应项改变了）；
+
+		// // 不管是forEach还是map 都支持第二个参数值，第二个参数的意思是把匿名回调函数中的this进行修改。
+
+		// // 以下是foreach与map比较
+		// var ary = [12, 23, 24, 42, 1];
+		// var res = ary.forEach(function(item, index, input) {
+		// 	input[index] = item * 10;
+		// })
+		// console.log('this is foreach')
+		// console.log(res); //-->undefined;
+		// console.log(ary); //-->会对原来的数组产生改变；
+
+
+		// var ary = [12, 23, 24, 42, 1];
+		// var res = ary.map(function(item, index, input) {
+		// 	return item * 10;
+		// })
+		// console.log('this is map')
+		// console.log(res); //-->[120,230,240,420,10];
+		// console.log(ary); //-->[12,23,24,42,1]；
+
+		// // filter() 创建一个新的匹配过滤条件的数组。
+
+		// var arr3 = [{
+		// 		"name": "apple",
+		// 		"count": 2
+		// 	},
+		// 	{
+		// 		"name": "orange",
+		// 		"count": 5
+		// 	},
+		// 	{
+		// 		"name": "pear",
+		// 		"count": 3
+		// 	},
+		// 	{
+		// 		"name": "orange",
+		// 		"count": 16
+		// 	},
+		// ];
+		// var newArr = arr3.filter(function(item) {
+		// 	return item.name === "orange";
+		// });
+		// console.log("Filter results:", newArr);
+
+		// // 遍历数组内元素出现个数 普通for遍历
+		// var arr4 = ["apple", "orange", "apple", "orange", "pear", "orange"];
+
+		// function getWordCnt() {
+		// 	let obj = {};
+		// 	for (let i = 0, l = arr4.length; i < l; i++) {
+		// 		let item = arr4[i];
+		// 		obj[item] = (obj[item] + 1) || 1;
+		// 	}
+		// 	return obj;
+		// }
+		// console.log(getWordCnt());
+
+
+		// console.log('this is reduce')
+
+		// // 遍历数组内元素出现个数 reduce  统计一个数组中有多少个不重复的单词
+		// var arr5 = ["apple", "orange", "apple", "orange", "pear", "orange"];
+
+		// function noPassValue() {
+		// 	return arr5.reduce((prev, next) => {
+		// 		console.log("prev:", prev);
+		// 		console.log("next:", next);
+		// 		return prev + "***" + next;
+		// 	});
+		// }
+
+		// function passValue() {
+		// 	return arr5.reduce((prev, next) => {
+		// 		console.log("prev:", prev);
+		// 		console.log("next:", next);
+		// 		prev[next] = 1;
+		// 		return prev;
+		// 	}, {});
+		// }
+
+		// console.log("No Additional parameter:", noPassValue());
+		// console.log("----------------");
+		// console.log("With {} as an additional parameter:", passValue());
+
+
+		// // reduceRight  反转字符串中的字符
+		// // reduceRight的语法以及回调函数的规则和reduce方法是一样的，区别就是在与reduce是升序，即角标从0开始，而reduceRight是降序，即角标从arr.length-1开始。
+
+		// // reduceRight() 从数组的末尾向前将数组中的数组项做累加。
+		// let arr6 = [10, 20, 40, 55]
+
+		// function addNum(total, num) {
+		// 	return total + num
+		// }
+
+		// // 从右往左 对数据进行相减
+		// function removeNum(total, num) {
+		// 	return total - num
+		// }
+
+		// let arr6Num = arr6.reduceRight(addNum)
+		// console.log('arr6Num', arr6Num)
+
+		// let arr6removeNum = arr6.reduceRight(removeNum)
+		// console.log('arr6removeNum', arr6removeNum)
+
+
+		// var word = "retupmoc";
+
+		// function AppendToArray(previousValue, currentValue) {
+		// 	return previousValue + currentValue;
+		// }
+
+		// var result = [].reduceRight.call(word, AppendToArray, "the ");
+		// console.log('reduceRight', result); // the computer
+
+		// // 补.isArray()
+		// // isArray()是Array对象的一个静态函数，用来判断一个对象是不是数组
+
+		// var ary1 = [];
+		// var res1 = Array.isArray(ary1); // Output: true
+		// console.log(res1)
+
+		// var ary2 = new Array();
+		// var res2 = Array.isArray(ary2); // Output: true
+		// console.log(res2)
+
+		// var ary3 = [1, 2, 3];
+		// var res3 = Array.isArray(ary3); // Output: true
+		// console.log(res3)
+
+		// var ary4 = new Date();
+		// var res4 = Array.isArray(ary4); // Output: false
+		// console.log(res4)
+
+		// // 不推荐使用eval(..)和with的原因是会被严格模式所影响（限制）。with被完全禁止，而在保留核心功能的前提下，间接或非安全地使用eval(..)也被禁止了。
+		// function evalTest(str, a) {
+		// 	eval(str)
+		// 	console.log(a, b)
+		// }
+		// var b = 2
+		// evalTest('var b  = 3', 1)
+
+
+		// // 函数作用域
+		// var aa = 11
+
+		// function fun() {
+		// 	var aa = 22
+		// 	console.log('fun aa = ', aa)
+		// }
+		// fun()
+		// console.log('outer aa = ', aa)
+
+		// var bb = 111;
+		// // 函数会被当作函数表达式而不是一个标准的函数声明来处理。
+		// // 立即执行函数
+		// // IIFE，代表立即执行函数表达式（Immediately Invoked Function Expression）
+		// (function fun() {
+		// 	var bb = 222;
+		// 	console.log('foo bb = ', bb);
+		// })()
+		// console.log('out bb = ', bb)
+
+
+		// // setTimeout回调函数  匿名函数表达式
+		// setTimeout(function() {
+		// 	console.log('this is setTimeout')
+		// }, 2000)
+		// // setTimeout回调函数  具名函数表达式
+		// setTimeout(function hasName() {
+		// 	console.log('this is hasName setTimeout')
+		// }, 5000)
+
+
+		// var iife = 555;
+
+		// (function IIFE(def) {
+		// 	def(window);
+		// })(function def(global) {
+
+		// 	var iife = 666;
+		// 	console.log(iife); // 666
+		// 	console.log(global.iife); // 555
+
+		// });
+
+
+		// (function(str) {
+		// 	console.log('str=' + str)
+		// })('hello')
+
+		// for (let i = 0; i < 5; i++) {
+		// 	// 输出01234
+		// 	console.log('i', i)
+		// }
+
+		// for (var j = 0; j < 5; j++) {
+		// 	// 输出01234
+		// 	console.log('jjjjjjjjjj', j)
+		// }
+
+		// try {
+		//     undefined(); // 执行一个非法操作来强制制造一个异常
+		// } 
+		// catch (err) {
+		//     console.log( err ); // 能够正常执行！
+		// }
+		// // console.log( err ); // ReferenceError: err not found
+
+
+		// {
+		//     let kj;
+		//     for (kj=0; kj<10; kj++) {
+		//         let ki = kj; // 每个迭代重新绑定！
+		//         console.log( ki ); //输出0-9
+		//     }
+		// }
+
+		// // 变量提升
+		// // 函数声明和变量声明都会被提升。函数会首先被提升，然后才是变量。
+
+		// function getSomething() {
+		//     return "something";
+		// }
+
+		// async function testAsync() {
+		//     return Promise.resolve("hello async");
+		// }
+
+		// async function test() {
+		//     const v1 = await getSomething();
+		//     const v2 = await testAsync();
+		//     console.log(v1, v2);
+		// }
+
+		// test();
+
+
+		console.log('this is apart line =======================================')
+
+		// function opration(item){
+		//     var p = new Promise(function(resolve, reject){
+		//         setTimeout(function(){
+		//             resolve(item+1);
+		//         },1000);
+		//     });
+		//     console.log('this is item',item);
+		// 		console.log('this is p', p)
+		//     return p;
+		// }
+		// function failed(e){
+		//     console.log(e);
+		// }
+		// Promise.resolve(1).then(opration).then(opration).then(opration).catch(failed);
+
+
+		// var p = new Promise(function(resolve, reject){
+		//     console.log('new一个Promise对象');
+		//     setTimeout(function(){
+		//         resolve('Monkey');
+		//     },1000);
+		// });
+
+
+		// p.then(function(value){
+		//     console.log(value);
+		// });
+
+
+		// p.then(function(value){
+		//     console.log(value);
+		//     //返回非Promise对象，如我的对象
+		//     return {
+		//         name: 'Dorie',
+		//         age: 18
+		//     };
+		// }).then(function(obj){
+		//     console.log(obj.name);
+		// });
+
+
+		// p.then(function(value){
+		//     var p = new Promise(function(resolve, reject){
+		//         setTimeout(function(){
+		//             var message = value + ' V Dorie'
+		//             resolve(message);
+		//         },1000);
+		//     });
+		//     console.log(value);
+		//     //返回一个Promise对象
+		//     return p;
+		// }).then(function(value){
+		//     console.log(value);
+		// });
+
+
+		// var p = new Promise(function(resolve, reject){
+		// 		//M未定义
+		// 		// console.log(1111,M);
+		// 		setTimeout(function(){
+		// 				resolve('Monkey');
+		// 		},1000);
+		// });
+		// p.then(function(value){
+		// 		var p = new Promise(function(resolve, reject){
+		// 				setTimeout(function(){
+		// 						var message = value + ' V Dorie'
+		// 						resolve(message);
+		// 				},1000);
+		// 		});
+		// 		console.log(22,value);
+		// 		//返回一个Promise对象
+		// 		return p;
+		// }).then(function(value){
+		// 		console.log(333,value);
+		// 		return 'next is catch';
+		// }).catch(function(e){
+		// 		console.log(444,e);
+		// }).then(function(value){
+		// 		console.log('execute,but value is ' + value);
+		// });
+
+
+		//模拟Promise，改善resolve原型方法
+		// var Promise = function () {
+		//     this.thens = [];
+		// };
+		// Promise.prototype = {
+		//     constructor: Promise,
+		//     then: function(callback){
+		//         this.thens.push(callback);
+		//         return this;        
+		//     },
+		//     resolve: function () {
+		//         var t,p;
+		//         t = this.thens.shift();
+		//         t && (p = t.apply(null, arguments));
+		//         while(t && !(p instanceof Promise)){
+		//             t = this.thens.shift();
+		//             t && (p = t.call(null, p));    
+		//         }
+		//         if(this.thens.length){
+		//             p.thens = this.thens;
+		//         };
+		//     }
+		// }
+
+
+		// function f1() {
+		//     var promise = new Promise();
+		//     setTimeout(function () {
+
+		//         console.log(1);
+		//         promise.resolve();
+		//     }, 1500)
+
+		//     return promise;
+		// }
+
+		// function f2() {
+		//     var promise = new Promise();
+		//     setTimeout(function () {
+		//         console.log(2);
+		//         promise.resolve();
+		//     }, 1500);
+		//     return promise;
+		// }
+
+		// function f3() {
+		//     var promise = new Promise();
+		//     setTimeout(function () {
+
+		//         console.log(3);
+		//         promise.resolve();
+		//     }, 1500)
+
+		//     return promise;
+		// }
+
+		// function f4() {
+		//     console.log(4);
+		//     return 11;
+		// }
+
+		// function f5(x) {
+		//     console.log(x+1);
+		// }
+
+		// function f6() {
+		//     var promise = new Promise();
+		//     setTimeout(function () {
+
+		//         console.log(6);
+		//         promise.resolve();
+		//     }, 1500)
+
+		//     return promise;
+		// }
+
+		// function f7() {
+		//     console.log(7);
+		// }
+
+		// var that = f1().then(f2).then(f3).then(f4).then(f5).then(f6).then(f7);
+
+
+
+		// function getNumber(){
+		//     var p = new Promise(function(resolve, reject){
+		//         //做一些异步操作
+		//         setTimeout(function(){
+		//             var num = Math.ceil(Math.random()*10); //生成1-10的随机数
+		// 						console.log(num)
+		//             if(num<=5){
+		//                 resolve(num);
+		//             }
+		//             else{
+		//                 reject('数字太大了');
+		//             }
+		//         }, 2000);
+		//     });
+		//     return p;            
+		// }
+
+
+
+		// getNumber()
+		// .then(
+		//     function(data){
+		//         console.log('resolved');
+		//         console.log(data);
+		//     }, 
+		//     function(reason, data){
+		//         console.log('rejected');
+		//         console.log(reason);
+		//     }
+		// );
+
+
+		// 0. async基础用法测试
+
+		// async function fun0() {
+		//     console.log(1)
+		//     return 1
+		// }
+
+		// fun0().then( x => { console.log(x,999) })  //  输出结果 1， 1，
+
+
+		// async function funa() {
+		//     console.log('a')
+		//     return 'a'
+		// }
+
+		// funa().then( x => { console.log(x,999) })  //  输出结果a， a，
+
+
+		// async function funo() {
+		//     console.log({})
+		//     return {}
+		// }
+
+		// funo().then( x => { console.log(x,999) })   // 输出结果 {}  {}
+
+		// async function funp() {
+		//     console.log('Promise')
+		//     return new Promise(function(resolve, reject){
+		//         resolve('Promise')
+		//     })
+		// }
+
+		// funp().then( x => { console.log(x,999) })   // 输出promise  promise
+
+
+		// 1.定义一个或多个普通函数，函数必须返回Promise对象，如果返回其他类型的数据，将按照普通同步程序处理
+
+		// function log(time) {
+		//     return new Promise((resolve, reject)=> {
+		//         setTimeout(function(){
+		//            console.log(time)
+		//            resolve()
+		//         }, time)
+		//     })
+		// }
+
+		// async fun() {
+		//     await fun1()
+		//     await fun2()
+		//     await fun3()
+		//     await fun4()
+		//     console.log(1)
+		// }
+
+		// fun()
+
+		// 3. async / await的重要应用 
+
+		// const asy = function(x, time) {
+		//     return new Promise((resolve, reject) =>{
+		//         setTimeout(()=>{
+		//             resolve(x)
+		//         }, time)
+		//     })
+		// }
+
+		// const add = async function() {
+		//     const a = await asy(3, 5000)
+		//     console.log(a)
+		//     const b = await asy(4, 10000)
+		//     console.log(b)
+		//     const c =  await asy(5, 15000)
+		//     console.log(a,b,c)
+		//     const d = a + b +c  
+		//     console.log(d)
+		// }
+
+		// add();
+
+		// fun1() {
+		// 	cosnole.log('this is 1')
+		// }
+		// fun2() {
+		// 	cosnole.log('this is 2')
+		// }
+		// fun3() {
+		// 	cosnole.log('this is 3')
+		// }
+		// fun4() {
+		// 	cosnole.log('this is 4')
+		// }
+
+
+
+		// 5秒后输出3  又10秒后输出4 又15秒后输出5  然后立刻输出3,4,5，然后输出12
+
+
+
+		// function log(time) {
+		// 	return new Promise((resolve, reject) => {
+		// 		setTimeout(function() {
+		// 			resolve(time)
+		// 		}, time)
+		// 	})
+		// }
+
+		// async function fun() {
+		// 	console.log(await log(1000))
+		// 	console.log(await log(2000))
+		// 	console.log(await log(3000))
+		// 	console.log(22222222222222222)
+
+		// }
+
+		// fun()
+		
+	var write = document.write;
+	write.bind(document)('hello'); 
+
+
+
+
+
+
+		// let msg = 'this is msg'
+		// let newmsg = `hello, this is lucy, and ${msg}`
+		// console.log('newmsg',newmsg)
+
+
+		// const tmpl = addrs => `
+		//   <table>
+		//   ${addrs.map(addr => `
+		//     <tr><td>${addr.first}</td></tr>
+		//     <tr><td>${addr.last}</td></tr>
+		//   `).join('')}
+		//   </table>
+		// `;
+
+
+		// const data = [
+		//     { first: '<Jane>', last: 'Bond' },
+		//     { first: 'Lars', last: '<Croft>' },
+		// ];
+
+		// console.log('data',tmpl(data));
+
+		// function test(x,y='world') {
+		// 	console.log(x,y)
+		// }
+		// test('hello')
+		// test('hello','lucy')
+
+		// function point(x = 0, y = 0) {
+		// 	this.x = x;
+		// 	this.y = y
+		// }
+		// const p = new point()
+		// const pp = new point(5,6)
+		// console.log('this is p', p)
+		// console.log('this is pp', pp.y)
+
+		// let getTempItem = id => ({ id: id, name: "Temp" });
+		// console.log('getTempItem',getTempItem)
+
+		// class point{
+		// 	constructor(x,y) {
+		// 		this.x =x;
+		// 		this.y = y;
+		// 		this.z= x*y
+		// 	}
+		// 	toString() {
+		// 		return 'this string is : ('+this.x+','+this.y+')'
+		// 	}
+		// }
+		// let p = new point(2,3)
+		// console.log('p',p, p.toString())
+		// console.log('typeof',typeof point)
+		// console.log(p.hasOwnProperty('x'))
+		// console.log(p.hasOwnProperty('y'))
+		// console.log(p.hasOwnProperty('z'))
+
+		// set 数组去重
+		// const s = new Set()
+		// const arr1 = [12,34,1,1,55,66,1]
+		// // arr1.forEach((item, index)=>{
+		// // 	console.log(item)
+		// // })
+		// // arr1.forEach(x=>s.add(x))
+		// // console.log('this is set s',s)
+		// // set 数组对象
+		// let newArr = new Set(arr1)
+		// console.log('````````````````````````````````')
+		// console.log('arr1',arr1.length,typeof arr1)
+		// console.log('arr1.length',isNaN(arr1.length))
+		// console.log(Object.prototype.toString.call(arr1))
+		// console.log('isArr',Array.isArray(arr1))
+		// console.log('constructor',arr1.constructor)
+		// console.log('instanceof',arr1 instanceof Array)
+		// console.log('````````````````````````````````')
+		// //set 没有length属性
+		// console.log('newArr',newArr.length,typeof newArr)
+		// console.log('newArr.length',isNaN(newArr.length))
+		// console.log(Object.prototype.toString.call(newArr))
+		// console.log('isArr',Array.isArray(newArr))
+		// console.log('constructor',newArr.constructor)
+		// console.log('instanceof',newArr instanceof Array)
+		// console.log('````````````````````````````````')
+		// //对象
+		// let newObj = {
+		// 	name: 'aa',
+		// 	age: '17',
+		// 	value: '99',
+		// 	grade: '大学一年级'
+		// }
+		// console.log('newObj',newObj,newObj.length,typeof newObj)
+		// console.log('newObj.length',isNaN(newObj.length))
+		// console.log(Object.prototype.toString.call(newObj))
+		// console.log('newObj isArr',Array.isArray(newObj))
+		// console.log('newObj constructor',newObj.constructor)
+		// console.log('newObj instanceof',newObj instanceof Array)
+		// console.log('````````````````````````````````')
+		// //数组
+		// let newArr1 = Array.from(new Set(arr1))
+		// console.log('newArr1',newArr1,newArr1.length,typeof newArr1)
+		// console.log('newArr1.length',isNaN(newArr1.length))
+		// console.log(Object.prototype.toString.call(newArr1))
+		// console.log('isArr1',Array.isArray(newArr1))
+		// console.log('constructor',newArr1.constructor)
+		// console.log('instanceof',newArr1 instanceof Array)
+
+
+		// let [x=1] = [undefined]
+		// console.log(x)
+
+		// let [y=1] = [null]
+		// console.log(y)
+
+		// let x
+
+
+
+		// if([1][0] === undefined) { //此处由于[1][0]这个代表获取([1])数组第一个元素等式不成立
+		//   console.log(22222)
+		// 	x= f()
+		// } else { 
+		// 	console.log(3333333)
+		//   x= [1][0]  //  此处代码将会被执行
+		// }
+
+
+		// console.log(x, typeof x)
+
+
+		// var arr = [1];
+		// console.log(arr[0])
+
+		var str = "iid0000ffr";
+		var substr2 = str.match(/id(\S*)ff/);
+
+		console.log('substr2', substr2)
+	</script>
+	<style>
+		* {
+			box-sizing: border box;
+		}
+
+		.center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		.btn,
+		button {
+			background: #1d1d1d;
+			border: none;
+			font-size: 10px;
+			font-size: 1rem;
+			background-color: #1d1d1d;
+			color: white;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			padding: 14px 21px;
+			padding: 1.4rem 2.1rem;
+			border: 2px solid #1d1d1d;
+			-webkit-transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+			transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+			display: inline-block;
+			cursor: pointer;
+			width: 100%;
+			min-width: 200px;
+			min-width: 20rem;
+			outline: none;
+			vertical-align: middle;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.btn:hover,
+		button:hover {
+			background: #2a2a2a;
+			border-color: #2a2a2a;
+			color: #fff;
+		}
+
+		.btn-border {
+			background-color: transparent;
+			color: #1d1d1d;
+		}
+
+		.btn-arrow {
+			position: relative;
+			-webkit-transition: background-color 300ms ease-out;
+			transition: background-color 300ms ease-out;
+		}
+
+		.btn-arrow span {
+			display: inline-block;
+			position: relative;
+			-webkit-transition: all 300ms ease-out;
+			transition: all 300ms ease-out;
+			will-change: transform;
+		}
+
+		.btn-arrow:hover span {
+			-webkit-transform: translate3d(-1rem, 0, 0);
+			transform: translate3d(-1rem, 0, 0);
+		}
+
+		.btn-arrow svg {
+			position: absolute;
+			width: 1.1em;
+			right: 0px;
+			right: 0rem;
+			opacity: 0;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			-webkit-transition: all 300ms ease-out;
+			transition: all 300ms ease-out;
+			will-change: right, opacity;
+		}
+
+		.btn-arrow svg * {
+			stroke-width: 5;
+			stroke-color: transparent;
+		}
+
+		.btn-arrow:hover svg {
+			opacity: 1;
+			right: -2rem;
+		}
+
+
+		ul {
+			list-style: none;
+		}
+
+		li {
+			position: relative;
+			display: block;
+			overflow: hidden;
+
+		}
+
+		li i {
+			display: inline;
+			float: left;
+			height: 50px;
+			width: 50px;
+		}
+
+		li h3 {
+			padding-top: 13.5px;
+			padding-bottom: 13px;
+			padding-left: 60px;
+			font-size: 20px;
+			background-color: #fff;
+
+		}
+
+		.cat {
+			margin: 50px 500px;
+			position: relative;
+			width: 200px;
+			background: #f8f8f8;
+			border: 1px solid #bbb;
+		}
+
+		.cat li i {
+			background-image: url(pic.png);
+		}
+
+		.cat-1 i {
+			background-position: 0 0;
+		}
+
+		.cat-2 i {
+			background-position: 0 -50px;
+		}
+
+		.cat-3 i {
+			background-position: 0 -100px;
+		}
+
+		.cat-4 i {
+			background-position: 0 -150px;
+		}
+
+		.cat-5 i {
+			background-position: 0 -200px;
+		}
+
+		.cat-6 i {
+			background-position: 0 -250px;
+		}
+
+		.yu1:hover {
+			background: #b3c82f;
+		}
+
+		.yu2:hover {
+			background: #bc5b3a;
+		}
+
+		.yu3:hover {
+			background: #f88623;
+		}
+
+		.yu4:hover {
+			background: #1ea0dc;
+		}
+
+		.yu5:hover {
+			background: #5e5e9e;
+		}
+
+		.yu6:hover {
+			background: #658093;
+		}
+
+		
+	</style>
+</html>
